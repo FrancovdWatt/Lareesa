@@ -1,0 +1,111 @@
+﻿:root {
+    --headingfont: 1;
+    --datafont: 1;
+    --rowHeight: 1;
+    --iconHeight: 1;
+}
+
+.dx-datagrid .dx-row > td {
+    /*datarow*/
+    font-size: calc(var(--datafont)* 7px);
+    line-height: 10px;
+}
+
+.dx-datagrid-headers .dx-datagrid-table .dx-row > td {
+    /*headingrow*/
+    border-bottom: 1px solid #e0e0e0;
+    line-height: calc(var(--rowHeight) * 12px);
+    font-weight: 500;
+    font-size: calc(var(--headingfont) * 10px);
+}
+
+.dx-datagrid .dx-datagrid-content .dx-datagrid-table .dx-row > td:not(.dx-validation-pending):not(.dx-datagrid-select-all).dx-command-edit.dx-command-edit-with-icons .dx-link {
+   /* delete_dustbin_icon*/
+    width: 18px;
+    height: calc(var(--iconHeight) * 5px);
+    background-position: 0 0;
+    background-size: 18px 18px;
+    padding: 0;
+    /*font-size: calc(var(--datafont) * 18px);*/
+    text-align: center;
+    line-height: calc(var(--iconHeight) * 5px);
+    margin: 0 2px;
+    vertical-align: middle;
+}
+
+.dx-datagrid .dx-datagrid-table .dx-header-row > td {
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
+
+.dx-datagrid .dx-menu .dx-menu-item .dx-menu-item-content .dx-icon, .dx-datagrid-container .dx-menu .dx-menu-item .dx-menu-item-content .dx-icon {
+    /*searchIcon*/
+    width: 10px;
+    height: calc(var(--iconHeight) * 10px);
+    background-position: 0 0;
+    background-size: 10px 10px;
+    padding: 0;
+    font-size: calc(var(--datafont) * 10px);
+    text-align: center;
+    line-height: calc(var(--iconHeight) * 10px);
+    margin: 0 3px;
+}
+
+.dx-filter-menu.dx-menu .dx-menu-item .dx-menu-item-content {
+    padding: 1px 1px 1px;
+}
+
+.dx-editor-cell .dx-texteditor .dx-texteditor-input {
+    background: rgba(255,255,255,0);
+    font-size: calc(var(--datafont) * 8px);
+    height: calc(var(--rowHeight) * 12px);
+    line-height: calc(var(--rowHeight) * 12px);
+    padding: 0 8px;
+    margin-top: 0;
+}
+
+.layout-body .content h2 {
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+.dx-pager .dx-page-sizes .dx-page-size {
+    padding: 9px 12px;
+    line-height: 2px;
+}
+
+.dx-datagrid-header-panel .dx-toolbar {
+    /*table_toolbar*/
+    background-color: #f5f6f7;
+}
+
+.dx-datagrid-header-panel .dx-datagrid-toolbar-button .dx-icon {
+    color: #A60F0F;
+}
+
+.dx-checkbox-checked .dx-checkbox-icon {
+   /* checkbox when ticked during adding*/
+    color: #fff;
+    background-color: white;
+    border: none;
+    font: 16px/1em DXIcons;
+    text-align: center;
+}
+
+.dx-pager .dx-pages .dx-page {
+    /*alignment of green selected box for pagenator*/
+    padding: 9px 12px;
+    line-height: 2px;
+}
+
+.dx-toolbar .dx-toolbar-item.menu-button > .dx-toolbar-item-content .dx-icon {
+    color: #605E5E;
+}
+
+.menu-container .dx-treeview .dx-treeview-node-container .dx-treeview-node.dx-state-selected:not(.dx-state-focused) > .dx-treeview-item {
+    background: #605E5E;
+}
+
+.menu-container .dx-treeview .dx-treeview-node-container .dx-treeview-node:not(.dx-state-focused) > .dx-treeview-item.dx-state-hover {
+    background-color: #605E5E;
+}
